@@ -3,11 +3,13 @@ import { Link } from 'react-router';
 
 const Navbar = () => {
     const links = <>
-      <Link to='/'> <li className='m-2'>Home</li></Link>
-       <Link to='/myBookings'><li className='m-2'>My Bookings</li></Link>
+        <Link to='/'> <li className='m-2'>Home</li></Link>
+        <Link to='/myBookings'><li className='m-2'>My Bookings</li></Link>
+        <Link to='/blogs'><li className='m-2 list-none'>Blogs</li></Link>
+        <Link to='/contactUs'><li className='m-2 list-none'>Contact us</li></Link>
     </>
     return (
-        <div className="navbar w-2/3 mx-auto mb-5 py-5">
+        <div className="navbar lg:w-2/3 mx-auto mb-5 py-5">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -19,18 +21,18 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <div className='flex gap-1 items-center'>
+                <div className='flex items-center'>
                     <img src="/src/assets/logo.png" alt="" />
-                    <a className="btn btn-ghost text-xl">Phudu</a>
+                    <a className="btn btn-ghost font-bold text-xl">DocTalk</a>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                {links}
+                    {links}
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <a className="btn text-white bg-blue-600 rounded-3xl">Emergency</a>
             </div>
         </div>
     );

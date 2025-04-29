@@ -6,6 +6,8 @@ import Root from '../Pages/Root';
 import ErrorPage from '../Pages/ErrorPage';
 import Home from '../Pages/Home';
 import MyBookings from '../Pages/MyBookings';
+import Blogs from '../Pages/Blogs';
+import ContactUs from '../Pages/ContactUs';
 
 const router = createBrowserRouter([
     {
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
         {
             path: '/myBookings',
             Component: MyBookings
+        },
+        {
+          path:'/blogs',
+          Component: Blogs
+        },
+        {
+          path: '/contactUs',
+          Component: ContactUs
         }
       ]
     },
