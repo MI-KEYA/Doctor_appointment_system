@@ -2,18 +2,21 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const Footer = () => {
+    const links = <>
+      <Link to='/'> <li className='m-2 list-none'>Home</li></Link>
+       <Link to='/myBookings'><li className='m-2 list-none'>My Bookings</li></Link>
+       <Link to='/about'><li className='m-2 list-none'>Blogs</li></Link>
+       <Link to='/about'><li className='m-2 list-none'>Contact us</li></Link>
+    </>
     return (
-        <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+        <footer className="footer footer-horizontal footer-center bg-white text-base-content rounded p-10">
             <div className='flex gap-1 items-center'>
                     <img src="/src/assets/logo.png" alt="" />
                     <a className="btn btn-ghost text-xl">Phudu</a>
                 </div>
                
             <nav className="grid grid-flow-col gap-4">
-                <Link to='/'><a>Home</a></Link>
-                <Link to='/myBookings'><a>My Bookings</a></Link>
-                <a className="link link-hover">Blogs</a>
-                <a className="link link-hover">Contact us</a>
+                {links}
             </nav>
             <hr className="border-t-2  border-gray-300 w-2/3 my-2" />
 

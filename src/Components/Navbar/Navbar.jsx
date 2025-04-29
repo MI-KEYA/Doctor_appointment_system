@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const Navbar = () => {
+    const links = <>
+      <Link to='/'> <li className='m-2'>Home</li></Link>
+       <Link to='/myBookings'><li className='m-2'>My Bookings</li></Link>
+    </>
     return (
         <div className="navbar w-2/3 mx-auto mb-5 py-5">
             <div className="navbar-start">
@@ -12,8 +16,7 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <Link to='/'><li><a>Home</a></li></Link>
-                        <Link to='/myBookings'><li><a>My Bookings</a></li></Link>
+                        {links}
                     </ul>
                 </div>
                 <div className='flex gap-1 items-center'>
@@ -23,8 +26,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                <Link to='/'><li><a>Home</a></li></Link>
-                <Link to='/myBookings'><li><a>My Bookings</a></li></Link>
+                {links}
                 </ul>
             </div>
             <div className="navbar-end">
