@@ -12,11 +12,11 @@ const Banner = () => {
                  Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation,
                  book appointments in minutes and receive quality care you can trust.
                 </p>
-                <form className='lg:flex justify-center gap-2'>
+                <form className='lg:flex justify-center gap-2 mb-5'>
                     <input 
-                    className='bg-white py-2 w-2/3 px-3 rounded-xl' 
+                    className='bg-white py-2 lg:w-2/5 px-3 rounded-3xl' 
                     type='text' placeholder='Search any Doctor'></input>
-                <button className=" rounded-xl btn btn-primary">Get Started</button>
+                <button className=" rounded-3xl btn btn-primary">Search now</button>
                 </form>
             </div>
             <div className="lg:flex gap-5 ">

@@ -17,7 +17,7 @@ const Footer = () => {
             </nav>
             <hr className="border-t-2  border-gray-300 w-2/3 my-2" />
 
-            <nav>
+            <nav className='mb-5'>
                 <div className="grid grid-flow-col gap-4">
                     <a>
                         <svg
