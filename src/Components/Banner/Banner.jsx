@@ -1,0 +1,36 @@
+import React from 'react';
+
+const Banner = () => {
+    return (
+        <div className="border-4 p-10 rounded-2xl border-white  lg:h-[700px] lg:w-[1200px] mx-auto
+         mb-5 flex flex-col text-center gap-5  justify-center items-center bg-gradient-to-t from-white via-gray-200 to-gray-300 
+         ">
+
+            <div>
+                <h1 className="text-5xl font-bold">Dependable Care, Backed by Trusted Professionals.</h1>
+                <p className="py-6">
+                 Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation,
+                 book appointments in minutes and receive quality care you can trust.
+                </p>
+                <form className='lg:flex justify-center gap-2'>
+                    <input 
+                    className='bg-white py-2 w-2/3 px-3 rounded-xl' 
+                    type='text' placeholder='Search any Doctor'></input>
+                <button className=" rounded-xl btn btn-primary">Get Started</button>
+                </form>
+            </div>
+            <div className="lg:flex gap-5 ">
+                <img
+                    src="/src/assets/banner-img-1.png"
+                    className="max-w-sm rounded-lg shadow-2xl"
+                />
+                <img
+                    src="/src/assets/banner-2.jpg"
+                    className="max-w-sm rounded-lg shadow-2xl"
+                />
+            </div>
+        </div>
+    );
+};
+
+export default Banner;
