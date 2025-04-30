@@ -1,18 +1,19 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import Doctor from '../Doctor/Doctor';
-import ServiceCount from '../ServiceCount/ServiceCount';
+import Success from '../Success/Success';
+
 
 
 const Doctors = ({ data }) => {
- const [displayDoctors, setDisplayDoctors] = useState([]);
- const [showAll, setShowAll] = useState(false);
- useEffect(()=>{
-   if(showAll){
-    setDisplayDoctors(data);
-   }else{
-    setDisplayDoctors(data.slice(0,6))
-   }
- }, [data, showAll])
+    const [displayDoctors, setDisplayDoctors] = useState([]);
+    const [showAll, setShowAll] = useState(false);
+    useEffect(() => {
+        if (showAll) {
+            setDisplayDoctors(data);
+        } else {
+            setDisplayDoctors(data.slice(0, 6))
+        }
+    }, [data, showAll])
 
     return (
         <div className='w-4/5 mx-auto mb-10'>
@@ -26,20 +27,20 @@ const Doctors = ({ data }) => {
                     }
                 </Suspense>
             </div>
-           <div className='flex justify-center my-10'>
-           <button onClick={()=>{
-            setShowAll(prev=>!prev)
-            if(showAll){
-                window.scrollTo(0,700);
-            }
-           }} 
-           className='btn justify-center rounded-3xl text-white bg-blue-600 '>
-               {showAll?"Show less":"See all Doctors"}
-            </button>
-           </div>
-           <div>
-           <ServiceCount></ServiceCount>
-           </div>
+            <div className='flex justify-center my-10'>
+                <button onClick={() => {
+                    setShowAll(prev => !prev)
+                    if (showAll) {
+                        window.scrollTo(0, 700);
+                    }
+                }}
+                    className='btn justify-center rounded-3xl text-white bg-blue-600 '>
+                    {showAll ? "Show less" : "See all Doctors"}
+                </button>
+            </div>
+            <div>
+                <Success></Success>
+            </div>
         </div>
     );
 };
