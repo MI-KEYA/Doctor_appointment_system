@@ -1,111 +1,146 @@
- [
-    {
-      "image": "https://i.ibb.co.com/wrsz7rK4/purepng-com-doctordoctorsdoctors-and-nursesclinicianmedical-practitionernotepadfemale-1421526857248u.png",
-      "name": "Dr. Priya Sharma",
-      "education": "MBBS, MD (Internal Medicine)",
-      "speciality": "Cardiologist",
-      "experience": "12 years",
-      "registration_number": "DMC/12345",
-      "available": true
-    },
-    {
-      "image": "https://i.ibb.co.com/d0rWkBwz/doctor-sample2.jpg",
-      "name": "Dr. Rajeev Menon",
-      "education": "MBBS, MS (Orthopedics)",
-      "speciality": "Orthopedic Surgeon",
-      "experience": "15 years",
-      "registration_number": "KMC/67890",
-      "available": false
-    },
-    {
-      "image": "https://i.ibb.co.com/JR7Bpm2n/sample4.png",
-      "name": "Dr. Anjali Mehta",
-      "education": "MBBS, DGO",
-      "speciality": "Gynecologist",
-      "experience": "10 years",
-      "registration_number": "MMC/11223",
-      "available": true
-    },
-    {
-      "image": "https://i.ibb.co.com/hxjqZ5gH/sample5.png",
-      "name": "Dr. Vivek Rathi",
-      "education": "MBBS, MD (Dermatology)",
-      "speciality": "Dermatologist",
-      "experience": "8 years",
-      "registration_number": "HMC/33456",
-      "available": true
-    },
-    {
-      "image": "https://i.ibb.co.com/23hHNN47/sample7.png",
-      "name": "Dr. Sunita Iyer",
-      "education": "MBBS, MS (ENT)",
-      "speciality": "ENT Specialist",
-      "experience": "11 years",
-      "registration_number": "BMC/22331",
-      "available": false
-    },
-    {
-      "image": "https://i.ibb.co.com/MxF14nFz/sample6.jpg",
-      "name": "Dr. Arjun Kapoor",
-      "education": "MBBS, MS (General Surgery)",
-      "speciality": "General Surgeon",
-      "experience": "13 years",
-      "registration_number": "PMC/99887",
-      "available": true
-    },
-    {
-      "image": "https://i.ibb.co.com/Gvtg37QJ/sample8.jpg",
-      "name": "Dr. Neha Sinha",
-      "education": "MBBS, MD (Pediatrics)",
-      "speciality": "Pediatrician",
-      "experience": "9 years",
-      "registration_number": "TMC/55678",
-      "available": true
-    },
-    {
-      "image": "https://i.ibb.co.com/HTvWf8hT/sample10.jpg",
-      "name": "Dr. Manoj Desai",
-      "education": "MBBS, DM (Neurology)",
-      "speciality": "Neurologist",
-      "experience": "16 years",
-      "registration_number": "AMC/44556",
-      "available": false
-    },
-    {
-      "image": "https://i.ibb.co.com/j9gphWZ5/sample8.png",
-      "name": "Dr. Ritu Verma",
-      "education": "MBBS, MS (Ophthalmology)",
-      "speciality": "Ophthalmologist",
-      "experience": "7 years",
-      "registration_number": "RMC/88990",
-      "available": true
-    },
-    {
-      "image": "https://i.ibb.co.com/vxMqHyFg/sample12.jpg",
-      "name": "Dr. Saurabh Nair",
-      "education": "MBBS, MD (Psychiatry)",
-      "speciality": "Psychiatrist",
-      "experience": "14 years",
-      "registration_number": "CMC/22345",
-      "available": true
-    },
-    {
-      "image": "https://i.ibb.co.com/wZ2XX3CQ/sample9.png",
-      "name": "Dr. Meenakshi Rao",
-      "education": "MBBS, MD (Anesthesiology)",
-      "speciality": "Anesthesiologist",
-      "experience": "10 years",
-      "registration_number": "LMC/33221",
-      "available": false
-    },
-    {
-      "image": "https://i.ibb.co.com/rfcq4ZC5/sample11.jpg",
-      "name": "Dr. Akshay Pillai",
-      "education": "MBBS, MCh (Urology)",
-      "speciality": "Urologist",
-      "experience": "12 years",
-      "registration_number": "SMC/77233",
-      "available": true
-    }
-  ]
-  
+[
+  {
+    "image": "https://i.ibb.co.com/wrsz7rK4/purepng-com-doctordoctorsdoctors-and-nursesclinicianmedical-practitionernotepadfemale-1421526857248u.png",
+    "name": "Dr. Priya Sharma",
+    "education": "MBBS, MD (Internal Medicine)",
+    "speciality": "Cardiologist",
+    "experience": "12 years",
+    "registration_number": 12345,
+    "available": true,
+    "hospital": "Dhaka Medical College Hospital",
+    "available_days": ["Monday", "Wednesday", "Friday"],
+    "fee": 700
+  },
+  {
+    "image": "https://i.ibb.co.com/d0rWkBwz/doctor-sample2.jpg",
+    "name": "Dr. Rajeev Menon",
+    "education": "MBBS, MS (Orthopedics)",
+    "speciality": "Orthopedic Surgeon",
+    "experience": "15 years",
+    "registration_number": 67890,
+    "available": false,
+    "hospital": "Apollo Hospitals, Chennai",
+    "available_days": ["Tuesday", "Thursday"],
+    "fee": 800
+  },
+  {
+    "image": "https://i.ibb.co.com/JR7Bpm2n/sample4.png",
+    "name": "Dr. Anjali Mehta",
+    "education": "MBBS, DGO",
+    "speciality": "Gynecologist",
+    "experience": "10 years",
+    "registration_number": 11223,
+    "available": true,
+    "hospital": "Fortis Hospital, Delhi",
+    "available_days": ["Monday", "Wednesday", "Saturday"],
+    "fee": 600
+  },
+  {
+    "image": "https://i.ibb.co.com/hxjqZ5gH/sample5.png",
+    "name": "Dr. Vivek Rathi",
+    "education": "MBBS, MD (Dermatology)",
+    "speciality": "Dermatologist",
+    "experience": "8 years",
+    "registration_number": 33456,
+    "available": true,
+    "hospital": "Manipal Hospital, Bangalore",
+    "available_days": ["Tuesday", "Thursday", "Friday"],
+    "fee": 550
+  },
+  {
+    "image": "https://i.ibb.co.com/23hHNN47/sample7.png",
+    "name": "Dr. Sunita Iyer",
+    "education": "MBBS, MS (ENT)",
+    "speciality": "ENT Specialist",
+    "experience": "11 years",
+    "registration_number": 22331,
+    "available": false,
+    "hospital": "Max Super Specialty Hospital, Mumbai",
+    "available_days": ["Monday", "Thursday"],
+    "fee": 600
+  },
+  {
+    "image": "https://i.ibb.co.com/MxF14nFz/sample6.jpg",
+    "name": "Dr. Arjun Kapoor",
+    "education": "MBBS, MS (General Surgery)",
+    "speciality": "General Surgeon",
+    "experience": "13 years",
+    "registration_number": 99887,
+    "available": true,
+    "hospital": "AIIMS, Delhi",
+    "available_days": ["Wednesday", "Friday"],
+    "fee": 900
+  },
+  {
+    "image": "https://i.ibb.co.com/Gvtg37QJ/sample8.jpg",
+    "name": "Dr. Neha Sinha",
+    "education": "MBBS, MD (Pediatrics)",
+    "speciality": "Pediatrician",
+    "experience": "9 years",
+    "registration_number": 55678,
+    "available": true,
+    "hospital": "Rainbow Children's Hospital, Hyderabad",
+    "available_days": ["Tuesday", "Thursday", "Saturday"],
+    "fee": 500
+  },
+  {
+    "image": "https://i.ibb.co.com/HTvWf8hT/sample10.jpg",
+    "name": "Dr. Manoj Desai",
+    "education": "MBBS, DM (Neurology)",
+    "speciality": "Neurologist",
+    "experience": "16 years",
+    "registration_number": 44556,
+    "available": false,
+    "hospital": "Jaslok Hospital, Mumbai",
+    "available_days": ["Monday", "Wednesday"],
+    "fee": 1000
+  },
+  {
+    "image": "https://i.ibb.co.com/j9gphWZ5/sample8.png",
+    "name": "Dr. Ritu Verma",
+    "education": "MBBS, MS (Ophthalmology)",
+    "speciality": "Ophthalmologist",
+    "experience": "7 years",
+    "registration_number": 88990,
+    "available": true,
+    "hospital": "LV Prasad Eye Institute, Hyderabad",
+    "available_days": ["Monday", "Thursday", "Saturday"],
+    "fee": 400
+  },
+  {
+    "image": "https://i.ibb.co.com/vxMqHyFg/sample12.jpg",
+    "name": "Dr. Saurabh Nair",
+    "education": "MBBS, MD (Psychiatry)",
+    "speciality": "Psychiatrist",
+    "experience": "14 years",
+    "registration_number": 22345,
+    "available": true,
+    "hospital": "NIMHANS, Bangalore",
+    "available_days": ["Tuesday", "Friday"],
+    "fee": 750
+  },
+  {
+    "image": "https://i.ibb.co.com/wZ2XX3CQ/sample9.png",
+    "name": "Dr. Meenakshi Rao",
+    "education": "MBBS, MD (Anesthesiology)",
+    "speciality": "Anesthesiologist",
+    "experience": "10 years",
+    "registration_number": 33221,
+    "available": false,
+    "hospital": "CMC Vellore",
+    "available_days": ["Monday", "Wednesday"],
+    "fee": 650
+  },
+  {
+    "image": "https://i.ibb.co.com/rfcq4ZC5/sample11.jpg",
+    "name": "Dr. Akshay Pillai",
+    "education": "MBBS, MCh (Urology)",
+    "speciality": "Urologist",
+    "experience": "12 years",
+    "registration_number": 77233,
+    "available": true,
+    "hospital": "KIMS Hospital, Thiruvananthapuram",
+    "available_days": ["Wednesday", "Saturday"],
+    "fee": 850
+  }
+]

@@ -8,6 +8,7 @@ import Home from '../Pages/Home';
 import MyBookings from '../Pages/MyBookings';
 import Blogs from '../Pages/Blogs';
 import ContactUs from '../Pages/ContactUs';
+import DoctorDetails from '../Components/DoctorDetails/DoctorDetails';
 
 const router = createBrowserRouter([
     {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
         {
             index: true,
             path: '/',
-            loader:()=> fetch('doctorDetails.json'),
+            loader:()=> fetch('../doctorDetails.json'),
             Component: Home
         },
         {
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
         {
           path: '/contactUs',
           Component: ContactUs
+        },
+        {
+          path:'/doctorDetails/:reg',
+          loader:()=> fetch('../doctorDetails.json'),
+          Component: DoctorDetails
         }
       ]
     },
