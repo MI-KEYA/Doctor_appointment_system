@@ -1,5 +1,9 @@
 import React from 'react';
 import CountUp from 'react-countup';
+import totalDoctor from '../../assets/success-doctor.png'
+import reviewImage from '../../assets/success-review.png'
+import patientsImage from '../../assets/success-patients.png'
+import staffImage from '../../assets/success-staffs.png'
 
 const Success = () => {
     return (
@@ -11,7 +15,7 @@ const Success = () => {
             <div className=' grid  lg:grid-cols-4 gap-5 my-10'>
                 <div className='bg-white p-3 rounded-xl'>
                     <div className='flex mb-4 justify-center'>
-                    <img src="/src/assets/success-doctor.png" alt="" />
+                    <img src={totalDoctor} alt="" />
                     </div>
                     <h1 className='text-3xl font-bold mb-2'>
                     <CountUp
@@ -25,7 +29,7 @@ const Success = () => {
                 </div>
                 <div className='bg-white p-3 rounded-xl'>
                 <div className='flex mb-4 justify-center'>
-                    <img src="/src/assets/success-review.png" alt="" />
+                    <img src={reviewImage} alt="" />
                     </div>
                     <h1 className='text-3xl font-bold mb-2'>
                     <CountUp
@@ -38,7 +42,7 @@ const Success = () => {
                 </div>
                 <div className='bg-white p-3 rounded-xl'>
                 <div className='flex mb-4 justify-center'>
-                    <img src="/src/assets/success-patients.png" alt="" />
+                    <img src={patientsImage} alt="" />
                     </div>
                     <h1 className='text-3xl font-bold mb-2'>
                     <CountUp
@@ -51,7 +55,7 @@ const Success = () => {
                 </div>
                 <div className='bg-white p-3 rounded-xl '>
                 <div className='flex mb-4 justify-center'>
-                    <img src="/src/assets/success-staffs.png" alt="" />
+                    <img src={staffImage} alt="" />
                     </div>
                     <h1 className='text-3xl font-bold mb-2'>
                         <CountUp

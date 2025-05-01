@@ -1,5 +1,6 @@
 import React from 'react';
  import image1 from '../../assets/banner-img-1.png'
+ import image2 from '../../assets/banner-2.jpg'
 const Banner = () => {
     return (
         <div className="border-4 p-10 rounded-2xl border-white  lg:h-[700px] lg:w-[1200px] mx-auto
@@ -25,7 +26,7 @@ const Banner = () => {
                     className="max-w-sm rounded-lg shadow-2xl"
                 />
                 <img
-                    src="/src/assets/banner-2.jpg"
+                    src={image2}
                     className="max-w-sm rounded-lg shadow-2xl"
                 />
             </div>
