@@ -1,5 +1,5 @@
 import React from 'react';
-
+ import image1 from '../../assets/banner-img-1.png'
 const Banner = () => {
     return (
         <div className="border-4 p-10 rounded-2xl border-white  lg:h-[700px] lg:w-[1200px] mx-auto
@@ -21,7 +21,7 @@ const Banner = () => {
             </div>
             <div className="lg:flex gap-5 ">
                 <img
-                    src="/src/assets/banner-img-1.png"
+                    src={image1}
                     className="max-w-sm rounded-lg shadow-2xl"
                 />
                 <img
