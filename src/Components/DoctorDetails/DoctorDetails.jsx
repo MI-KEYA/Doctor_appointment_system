@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link, useLoaderData, useParams } from 'react-router';
+import { Link, useLoaderData, useNavigate, useParams } from 'react-router';
 import { addBooking } from '../../Utils';
-
+import { ToastContainer, toast } from 'react-toastify';
 
 const DoctorDetails = () => {
     const data = useLoaderData();
@@ -19,20 +19,27 @@ const DoctorDetails = () => {
         available
 
     } = singleDoctor;
-    const handleBooking = () => {
+    const navigate = useNavigate();
+    const handleBooking = (e) => {
+        e.preventDefault();
         addBooking(singleDoctor)
+        toast.success("Appointed Successfully");
+        setTimeout(() => {
+            navigate('/myBookings');
+        }, 2500);
 
     }
+    
     return (
         <div>
-
+            
             <div className='bg-white my-5 w-2/3 mx-auto rounded-3xl py-10 text-center'>
                 <h1 className='font-bold text-3xl mb-5'>Doctors Profile Details</h1>
                 <p className='font-semibold'>A doctor's profile typically includes their name,
                     qualifications, specialization, years of experience, and affiliated hospital or clinic.
                 </p>
             </div>
-
+            
             <div className='bg-white p-5 w-2/3 mx-auto  rounded-3xl mb-10'>
                 <div className='lg:flex gap-15 '>
                     <div>
@@ -63,14 +70,17 @@ const DoctorDetails = () => {
 
                 </div><hr className='text-gray-300 my-5' />
                 <div >
+                
                     <Link to='/myBookings'>
+                    
                         <button onClick={handleBooking}
-
+ 
                             className='btn w-full text-white bg-blue-700 rounded-3xl'>Book Appointment Now</button>
-                    </Link>
-                </div>
+                </Link>
+                <ToastContainer />
             </div>
         </div>
+        </div >
     );
 };
 

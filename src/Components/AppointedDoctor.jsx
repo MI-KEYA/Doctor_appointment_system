@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const AppointedDoctor = ({ singleDoctor, handleDelete }) => {
     const { name, registration_number, education, speciality, fee } = singleDoctor
     return (
@@ -17,6 +18,7 @@ const AppointedDoctor = ({ singleDoctor, handleDelete }) => {
              className='btn w-full text-red-700 bg-red-50 mt-5 rounded-3xl hover:text-white hover:bg-red-700'>
                 Cancel Appointment
             </button>
+           
         </div>
     );
 };
