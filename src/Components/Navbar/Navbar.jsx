@@ -1,13 +1,51 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { NavLink } from 'react-router';
 
 const Navbar = () => {
     const links = <>
-        <Link to='/'> <li className='m-2 font-semibold'>Home</li></Link>
-        <Link to='/myBookings'><li className='m-2'>My Bookings</li></Link>
-        <Link to='/blogs'><li className='m-2 list-none'>Blogs</li></Link>
-        <Link to='/contactUs'><li className='m-2 list-none'>Contact us</li></Link>
-    </>
+       <li className="m-2 font-semibold list-none">
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive ? 'text-gray-500 underline' : 'text-gray-800'
+        }
+      >
+        Home
+      </NavLink>
+    </li>
+    <li className="m-2 font-semibold list-none">
+      <NavLink
+        to="/myBookings"
+        className={({ isActive }) =>
+          isActive ? 'text-gray-500 underline' : 'text-gray-800'
+        }
+      >
+        My Bookings
+      </NavLink>
+    </li>
+    <li className="m-2 font-semibold list-none">
+      <NavLink
+        to="/blogs"
+        className={({ isActive }) =>
+          isActive ? 'text-gray-500 underline' : 'text-gray-800'
+        }
+      >
+        Blogs
+      </NavLink>
+    </li>
+    <li className="m-2 font-semibold list-none">
+      <NavLink
+        to="/contactUs"
+        className={({ isActive }) =>
+          isActive ? 'text-gray-500 underline' : 'text-gray-800'
+        }
+      >
+        Contact Us
+      </NavLink>
+    </li>
+  </>;
+
+
     return (
         <div className="navbar lg:w-2/3 mx-auto mb-5 py-5">
             <div className="navbar-start">

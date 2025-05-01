@@ -3,18 +3,18 @@ import { Link } from 'react-router';
 
 const Footer = () => {
     const links = <>
-      <Link to='/'> <li className='m-2 list-none'>Home</li></Link>
-       <Link to='/myBookings'><li className='m-2 list-none'>My Bookings</li></Link>
-       <Link to='/blogs'><li className='m-2 list-none'>Blogs</li></Link>
-       <Link to='/contactUs'><li className='m-2 list-none'>Contact us</li></Link>
+       <Link to='/'><li className='m-2 font-semibold list-none'>Home</li></Link>
+        <Link to='/myBookings'><li className='m-2 font-semibold list-none'>My Bookings</li></Link>
+        <Link to='/blogs'><li className='m-2 font-semibold list-none'>Blogs</li></Link>
+        <Link to='/contactUs'><li className='m-2 font-semibold list-none'>Contact us</li></Link>
     </>
     return (
         <footer className="footer footer-horizontal footer-center bg-white text-base-content rounded p-10">
             <div className='flex gap-1 items-center'>
-                    <img src="/src/assets/logo.png" alt="" />
-                    <a className="btn btn-ghost font-bold text-xl">DocTalk</a>
-                </div>
-               
+                <img src="/src/assets/logo.png" alt="" />
+                <a className="btn btn-ghost font-bold text-xl">DocTalk</a>
+            </div>
+
             <nav className="grid grid-flow-col gap-4">
                 {links}
             </nav>
