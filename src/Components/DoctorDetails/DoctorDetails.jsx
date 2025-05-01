@@ -1,5 +1,6 @@
 import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import { Link, useLoaderData, useParams } from 'react-router';
+import { addBooking } from '../../Utils';
 
 
 const DoctorDetails = () => {
@@ -14,10 +15,14 @@ const DoctorDetails = () => {
         speciality,
         hospital,
         available_days,
-        fee
+        fee,
+        available
 
     } = singleDoctor;
+    const handleBooking = () => {
+        addBooking(singleDoctor)
 
+    }
     return (
         <div>
 
@@ -28,7 +33,7 @@ const DoctorDetails = () => {
                 </p>
             </div>
 
-            <div className='bg-white p-5 w-2/3 mx-auto  rounded-3xl mb-20'>
+            <div className='bg-white p-5 w-2/3 mx-auto  rounded-3xl mb-10'>
                 <div className='lg:flex gap-15 '>
                     <div>
                         <img className='w-[200px] h-[300px] mt-10' src={image} alt="" />
@@ -48,6 +53,21 @@ const DoctorDetails = () => {
                         </div>
                         <p className='font-semibold'>Consultation Fee: <span className='font-semibold text-blue-500'>Taka: {fee} per consultation</span></p>
                     </div>
+                </div>
+            </div>
+            <div className='bg-white px-15 py-10 w-2/3 mx-auto  rounded-3xl mb-20'>
+                <h1 className='font-semibold text-2xl text-center'>Book An Appointment</h1><hr className='text-gray-300  my-5' />
+                <div className='lg:flex justify-between '>
+                    <p className='font-bold'>Availability </p>
+                    <p className='text-green-700 bg-green-100 px-3 py-1 rounded-3xl'>{(available) ? "Doctor Available Today" : "Not Available Today"}</p>
+
+                </div><hr className='text-gray-300 my-5' />
+                <div >
+                    <Link to='/myBookings'>
+                        <button onClick={handleBooking}
+
+                            className='btn w-full text-white bg-blue-700 rounded-3xl'>Book Appointment Now</button>
+                    </Link>
                 </div>
             </div>
         </div>

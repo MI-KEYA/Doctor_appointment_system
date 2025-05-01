@@ -10,6 +10,7 @@ import Blogs from '../Pages/Blogs';
 import ContactUs from '../Pages/ContactUs';
 import DoctorDetails from '../Components/DoctorDetails/DoctorDetails';
 
+
 const router = createBrowserRouter([
     {
       path: "/",
