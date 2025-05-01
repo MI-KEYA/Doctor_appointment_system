@@ -7,7 +7,7 @@ const Navbar = () => {
       <NavLink
         to="/"
         className={({ isActive }) =>
-          isActive ? 'text-gray-500 underline' : 'text-gray-800'
+          isActive ? 'text-gray-500 font-bold border-b-3 border-blue-800' : 'text-gray-800'
         }
       >
         Home
@@ -17,17 +17,17 @@ const Navbar = () => {
       <NavLink
         to="/myBookings"
         className={({ isActive }) =>
-          isActive ? 'text-gray-500 underline' : 'text-gray-800'
+          isActive ? 'text-gray-500 font-bold border-b-3 border-blue-800' : 'text-gray-800'
         }
       >
-        My Bookings
+        Bookings
       </NavLink>
     </li>
     <li className="m-2 font-semibold list-none">
       <NavLink
         to="/blogs"
         className={({ isActive }) =>
-          isActive ? 'text-gray-500 underline' : 'text-gray-800'
+          isActive ? 'text-gray-500 font-bold border-b-3 border-blue-800' : 'text-gray-800'
         }
       >
         Blogs
@@ -37,7 +37,7 @@ const Navbar = () => {
       <NavLink
         to="/contactUs"
         className={({ isActive }) =>
-          isActive ? 'text-gray-500 underline' : 'text-gray-800'
+          isActive ? 'text-gray-500 font-bold border-b-3 border-blue-800' : 'text-gray-800'
         }
       >
         Contact Us
@@ -55,7 +55,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        className=" dropdown-content bg-base-100  z-1 mt-3 w-52 p-2 shadow">
                         {links}
                     </ul>
                 </div>
@@ -65,7 +65,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className=" menu-horizontal px-1">
                     {links}
                 </ul>
             </div>

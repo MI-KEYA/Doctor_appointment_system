@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const Footer = () => {
     const links = <>
        <Link to='/'><li className='m-2 font-semibold list-none'>Home</li></Link>
-        <Link to='/myBookings'><li className='m-2 font-semibold list-none'>My Bookings</li></Link>
+        <Link to='/myBookings'><li className='m-2 font-semibold list-none'> Bookings</li></Link>
         <Link to='/blogs'><li className='m-2 font-semibold list-none'>Blogs</li></Link>
         <Link to='/contactUs'><li className='m-2 font-semibold list-none'>Contact us</li></Link>
     </>
