@@ -23,7 +23,7 @@ You can check the live demo here:
 ## Technologies Used
 
 - React.js (Functional Components & Hooks)
-- CSS for styling (or your styling approach)
+- tailwindCSS and Daisyui for styling (or your styling approach)
 - No backend or authentication implemented (frontend-only)
 
 ---
