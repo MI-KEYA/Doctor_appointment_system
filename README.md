@@ -1,12 +1,45 @@
-# React + Vite
+# Doctor Appointment Booking App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application to book and cancel doctor appointments and view doctor details. This project focuses on basic React functionality without backend or authentication.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- View a list of doctors with their details (name, specialty, contact info).
+- Book an appointment with a selected doctor.
+- Cancel an existing appointment.
+- Simple and intuitive user interface built with React.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Live Demo
+
+You can check the live demo here:  
+[Doctor Details Page](https://fertile-birthday.surge.sh/doctorDetails/67890)
+
+---
+
+## Technologies Used
+
+- React.js (Functional Components & Hooks)
+- CSS for styling (or your styling approach)
+- No backend or authentication implemented (frontend-only)
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/doctor-appointment.git
+cd doctor-appointment
+npm install
+npm run dev
